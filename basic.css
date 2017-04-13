@@ -1,0 +1,8 @@
+noscript div {
+    border: 1px solid white; /* Prevent oversized scrollbar. */
+    padding: 1em;
+}
+
+noscript p {
+    margin-left: 1em;
+}

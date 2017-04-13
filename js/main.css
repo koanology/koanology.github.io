@@ -1,0 +1,455 @@
+/* This ONLY applies in standard view mode. */
+
+html, body {
+    height: 100%;
+}
+
+.dj_gecko img { /* Force FF to display broken images like IE/Cr. */
+    -moz-force-broken-image-icon: 1;
+}
+
+textarea {
+    font: 12px Myriad,Helvetica,Tahoma,Arial,clean,sans-serif; /* Force same font in textareas. */
+}
+
+#CONTENT .topBanner {
+    color: white;
+    background: black;
+    background: -webkit-linear-gradient(to right, black, black, purple);
+    background: -o-linear-gradient(to right, black, black, purple);
+    background: -moz-linear-gradient(to right, black, black, purple);
+    background: linear-gradient(to right, black, black, purple);
+}
+
+.lotus {
+    float: left;
+    margin-right: 1em;
+}
+
+.brandName {
+    font-family: 'Architects Daughter', cursive;
+    font-size: xx-large;
+    margin-top: 1em;
+}
+
+.zenQuote {
+    font-family: monospace;
+    margin-top: 1em;
+}
+
+.errorSection {
+    color: red;
+    font-weight: bold;
+}
+
+.dijitContentPane.dateRangeWidget {
+    padding: 1px;
+}
+
+.dijitContentPane.filterWidget {
+    padding: 1px;
+    display: inline-table;
+}
+
+.dijitIcon.fa-lg {/* Standard font size is 12px. */
+    /*font-size: 150%;*/
+    line-height: inherit;
+    vertical-align: inherit;
+}
+
+.centerDivParent {
+    padding: 0;
+    text-align: center;
+}
+
+.centerDivParent > * {
+    display: table-cell;
+    padding: 0;
+    vertical-align: middle;
+}
+
+.loadingCursor {
+    cursor: progress;
+}
+
+#ERROR_MESSAGE .dijitDialogTitle {
+    margin-right: 2em;
+}
+
+#CONTENT .noPadding { /* NOTE: This may not render nicely in every use case. */
+    padding: 0;
+}
+
+#CONTENT .minPadding { /* Minimum padding that does not cause rendering issues. */
+    padding: 1px; /* Using 0 causes rendering issues. */
+}
+
+.dijitContentPane.fileUploadWidget {
+    display: inline;
+    padding: 1px;
+}
+
+.dijitContentPane.selectionTreeWidget {
+    display: inline-block;
+    padding: 4px;
+    border: 1px solid silver;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.dijitContentPane.selectionTreeWidget .dijitDropDownButton {
+    float: right;
+}
+
+.dijitContentPane.fileUploadWidget .fileNameText {
+    display: inline;
+    vertical-align: text-top;
+}
+
+.dijitContentPane.selectionTreeWidget .itemSelectedText {
+    display: inline;
+    vertical-align: middle;
+    line-height: 2em;
+}
+
+.comboSelectionTreeWidget  .toolbar .selectionTreeWidget {
+    vertical-align: middle;
+}
+
+.dijitContentPane.checkBox, .dijitContentPane.radioButton, .dijitContentPane.yesNoRadio, .dijitContentPane.yesNoRadioWidget {
+    padding: 4px;
+}
+
+#CONTENT .dijitCheckBox {
+    margin: 0.33em;
+}
+
+.treeMenu {
+    height: 20em;
+    border: 1px solid silver;
+}
+
+.inlineWidget {
+    display: inline;
+}
+
+.autoScroll {
+    overflow: auto;
+}
+
+.dijitUploaderHover input[type='file'] {
+    cursor: pointer; /* Some reason this is not set by default. */
+}
+
+#CONTENT .tableContainer-valueCell .readOnly .cke_toolbar {
+    display: none;
+}
+
+#CONTENT .rounded .editableCell.cellTypeCheckBox, #CONTENT .rounded .editableCell.cellTypeYesNoRadio, #CONTENT .rounded .editableCell.cellTypeRadioButton {
+    border: 1px solid silver;
+    padding: 4px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+#CONTENT .rounded .tableContainer-valueCell.tall.readonly {
+    vertical-align: top;
+}
+
+#CONTENT .buttons .tableContainer-valueCell {
+    border: 0;
+    padding: 1px;
+}
+
+.inputTable .TextBox {
+    width: 85%;
+}
+
+.inputTable .counter {
+    padding: 1px;
+}
+
+.inputTable .counter .slash {
+    padding: 0 1px;
+}
+
+.inputTable .counter .max {
+    font-weight: bold;
+}
+
+.inputTable .nearLimit .counter .length,
+.inputTable .atLimit .counter .length,
+.inputTable .overLimit .counter .length {
+    background-color: #FFFF00;
+}
+
+.inputTable .atLimit .counter .length,
+.inputTable .atLimit .counter .max,
+.inputTable .overLimit .counter .length,
+.inputTable .overLimit .counter .max {
+    text-decoration: underline;
+}
+
+.inputTable .counter.countTextBox, .inputTable .counter.countNumberTextBox {
+    display: inline;
+    margin: 0 4px;
+}
+
+.inputTable span.required, .inputTable span.hasSubmitFlag {
+    color: red;
+}
+
+.inputTable label.required {
+    font-weight: bold;
+}
+
+.inputTable .readOnly {
+    padding: 1px;
+}
+
+.inputTable .help {
+    cursor: help;
+    color: #228ef1;
+}
+
+.dijitContentPane.wysiwyg {
+    padding: 0;
+}
+
+#CONTENT {
+    padding: 0;
+}
+
+#CONTENT .view {
+    padding: 1px;
+}
+
+#CONTENT .dijitTabInner, #CONTENT .dijitTabPaneWrapper, #CONTENT .dijitTabController, #CONTENT .nowrapTabStrip {
+    border-color: #abc;
+}
+
+.dijitTab.dijitTabChecked {
+    font-weight: bold;
+}
+
+.dijitContentPane.toolbar {
+    background-color: #efefef;
+    padding: 1px;
+}
+
+.dijitBorderContainerNoGutter.keywords, .dijitBorderContainerNoGutter.comboSelectionTreeWidget {
+    height: 15em;
+    width: 50%;
+    border: thin solid #ddd;
+}
+
+.keywords .field-selector, .comboSelectionTreeWidget .field-selector {
+    width: 2em;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.keywords .dgrid-no-data, .comboSelectionTreeWidget .dgrid-no-data {
+    color: #444;
+    font-style: italic;
+    padding: 3px;
+}
+.dgrid-grid.selectionGrid {
+    height: 12em;
+    width: 50%;
+}
+
+.yesNoRadioWidget .dijitRadio {
+    margin-left: 1em;
+}
+
+.selectionGrid .field-selector {
+    width: 2em;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.dgrid th:hover {
+    background-color: #bcd;
+    text-decoration: underline;
+}
+
+.dgrid th {
+    background-color: #cde;
+    font-weight: bold;
+    border-right: 1px solid silver;
+    border-bottom: 1px solid silver;
+}
+
+.dgrid-header-scroll {
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+
+#CONTENT .rounded {
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+}
+
+#CONTENT .rounded .dijitAccordionTitle {
+    font-size: 125%;
+}
+
+#CONTENT .dijitTableLayout.rounded {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+#CONTENT .rounded .tableContainer-labelCell {
+    background-color: #bcd8f4;
+    border: silver solid 1px;
+    text-align: right;
+    vertical-align: top;
+    padding: 0.25em;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+#CONTENT .buttons .tableContainer-labelCell {
+    background-color: white;
+    border: none;
+    padding: 0.25em;
+}
+
+#CONTENT .buttons .tableContainer-valueCell .dijitContentPane {
+    padding: 1px;
+}
+
+#CONTENT .rounded select {
+    margin-left: 0px;
+}
+
+#CONTENT .rounded textarea {
+    width: 99%;
+    height: 10em;
+}
+
+.dgrid-cell {
+    word-wrap: break-word;
+}
+
+.dgrid-row:hover {
+    /*font-weight: bold;*/
+}
+
+.dgrid-row-odd {
+    background-color: #e5effa;
+}
+
+.dgrid-selected {
+    background-color: #bfd6eb;
+}
+
+.dijitTextBox input:focus {
+    background-color: #eff !important;
+}
+
+.dijitTextBoxReadOnly {
+    background-color: #FFF !important;
+    border: #FFF solid 1px !important;
+}
+
+.dijitTextAreaReadOnly {
+    background-color: #FFF !important;
+    border: #CCC solid 1px !important;
+}
+
+.dijitReadOnly .dijitButtonNode {
+    background-color: #FFF !important;
+    border-width: 0 !important;
+}
+
+.dijitReadOnly .dijitArrowButtonInner {
+    background-image: none !important;
+}
+
+.emptyCell {
+    background-color: white;
+    border-color: white;
+}
+
+.instructions {
+    font-weight: bold;
+    display: inline;
+    background-color: #fffff0;
+}
+
+.text {
+    white-space: pre-wrap;
+}
+
+.internalError {
+    padding: 0;
+}
+
+.internalError .message {
+    font-weight: bold;
+}
+
+.internalError .stack {
+    color: red;
+}
+
+.exception {
+    color: red;
+    margin-right: 1em;
+}
+
+.sqlException {
+    border: thin solid #DDD;
+}
+
+#CONTENT {
+    height: 100%;
+    width: 100%;
+}
+
+#ERROR_MESSAGE {
+    min-width: 250px;
+}
+
+.common.toolbar .userMenu {
+    padding: 1px;
+    float: right;
+}
+
+.common.toolbar .nav {
+    padding: 1px;
+    display: inline;
+}
+
+#CONTENT .rounded .dijitAccordionInnerContainer {
+    background-color: #1E5799;
+    border: 1px solid silver;
+}
+
+#CONTENT .rounded .dijitAccordionText {
+    color: white;
+    font-weight: bold;
+}
+
+#CONTENT .rounded .dijitTitlePaneTextNode {
+    font-weight: bold;
+}
+
+#CONTENT .rounded .dijitTitlePaneContentOuter {
+    -webkit-border-radius: 0 0 9px 9px;
+    -moz-border-radius: 0 0 9px 9px;
+    border-radius: 0 0 9px 9px;
+}
+
+#CONTENT .rounded .dijitTitlePaneTitle {
+    -webkit-border-radius: 9px 9px 0 0;
+    -moz-border-radius: 9px 9px 0 0;
+    border-radius: 9px 9px 0 0;
+}

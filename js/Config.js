@@ -1,0 +1,1 @@
+define({}); // For sharing commonly used components that require initialization.

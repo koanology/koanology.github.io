@@ -1,3 +1,6 @@
 name: Koanology
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
+exclude: [js/lib/font-awesome/4.7.0/src, js/lib/lodash/4.17.4/doc/README.md]
+gems:
+  - jekyll-feed
