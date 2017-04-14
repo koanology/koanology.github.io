@@ -29,12 +29,25 @@ textarea {
 .brandName {
     font-family: 'Architects Daughter', cursive;
     font-size: xx-large;
-    margin-top: 1em;
+    margin-top: 2em;
+    margin-left: 5em;
 }
 
 .zenQuote {
     font-family: monospace;
     margin-top: 1em;
+}
+
+.linkIcons {
+    margin-top: 1em;
+}
+
+.linkIcons a {
+    color: white;
+}
+
+.linkIcons span:hover {
+    cursor: pointer;
 }
 
 .errorSection {

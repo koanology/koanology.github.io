@@ -1,4 +1,5 @@
 define([
+    "dojo/_base/array",
     "dojo/_base/lang",
     "dojo/dom-construct",
     "dijit/layout/ContentPane",
@@ -7,6 +8,7 @@ define([
     "dojo/text!./main.html",
     "xstyle/css!//fonts.googleapis.com/css?family=Architects+Daughter"
 ], function (
+    array,
     lang,
     domConstruct,
     ContentPane,
@@ -17,17 +19,23 @@ define([
 return function () {
     document.title = "Koanology";
     
-    return new BorderContainer().afterCreated(function() {
-        new ContentPane({"class": "topBanner minPadding", region: "top", content: main_html}).placeAt(this);
+    var HTML_MAP = {};
+    new ContentPane({content: main_html}).afterCreated(function() {
+        array.forEach(this.domNode.childNodes, function(DOM) {
+            HTML_MAP[DOM.className] = DOM.innerHTML;
+        });
+        this.destroyRecursive();
+    });
+    
+    return new ContentPane({"class": "minPadding"}).afterCreated(function() {
+        new ContentPane({"class": "topBanner minPadding", content: HTML_MAP.top}).placeAt(this);
         new TabContainer({"class": "viewArea", region: "center"}).afterCreated(function() {
             new ContentPane({
-                title: "Highlights"
+                title: "Services",
+                content: HTML_MAP.highlights
             }).placeAt(this);
             new ContentPane({
                 title: "Wiki"
-            }).placeAt(this);
-            new ContentPane({
-                title: "Contact"
             }).placeAt(this);
         }).placeAt(this);
     });
