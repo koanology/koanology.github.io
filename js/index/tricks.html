@@ -1,0 +1,20 @@
+<h1>Tricks</h1>
+
+<p>Some programming tricks exist which can be faster than the intuitive way of doing things.</p>
+
+<h2>Mapping</h2>
+
+<p>The goal of this technique is to avoid branching. The idea is to find a way to map the input to the correct output using operations other than branching. This usually results in more CPU ops but it doesn&#39;t slow down the pipeline (whereas branching may).</p>
+
+<h3>Absolute Value Mapping</h3>
+
+<p>The absolute value function results in 3 CPU (integer) operations (unless there is a single hardware op). Branching may slow down a program because execution may not be predictable (i.e. it slows down the pipeline). By using the absolute value function we can make code execution predictable and potentially faster.</p>
+
+<h2>Dynamic Difficulty Adjustment</h2>
+
+<p>Players will likely quit a game at some point if it becomes too hard or too easy. Dynamically adjusting the difficulty not only&nbsp;involves predicting the&nbsp;psyche of pro gamers but casuals gamers as well.</p>
+
+<h3>Leaky Spawn System</h3>
+
+<p>A map can only fit so many units on it at one time. To simulate a map that holds more units than it actually can, keep respawning destroyed units as if they were coming from just outside the map or just outside of view.<br />
+&nbsp;</p>

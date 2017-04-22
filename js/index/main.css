@@ -1,0 +1,36 @@
+.viewIndex .services .fa-lg {
+    width: 2em;
+    text-align: center;
+}
+
+.viewIndex .services .fa-user-secret {
+    color: #000088;
+}
+
+.viewIndex .services .fa-handshake-o {
+    color: #FFA500;
+}
+
+.viewIndex .services .fa-shield {
+    color: #DD0000;
+}
+
+.viewIndex .services .fa-shopping-cart {
+    color: #880088;
+}
+
+.viewIndex .services .fa-flask {
+    color: #00CC00;
+}
+
+.viewIndex .services .fa-graduation-cap {
+    color: #000000;
+}
+
+.viewIndex .wiki h1 {
+    border-bottom: 1px solid black;
+}
+
+.viewIndex .wiki h2 {
+    border-bottom: 1px solid black;
+}
