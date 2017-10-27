@@ -1,5 +1,11 @@
-.viewIndex .services .fa-lg {
-    width: 2em;
+.viewIndex .services img {
+    margin: auto;
+    display: block;
+    margin-bottom: 4em;
+}
+
+.viewIndex .services h1 {
+    font-weight: bold;
     text-align: center;
 }
 
