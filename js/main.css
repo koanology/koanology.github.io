@@ -15,13 +15,13 @@ textarea {
 #CONTENT .topBanner {
     color: white;
     background: black;
-    background: -webkit-linear-gradient(to right, black, black, purple);
-    background: -o-linear-gradient(to right, black, black, purple);
-    background: -moz-linear-gradient(to right, black, black, purple);
-    background: linear-gradient(to right, black, black, purple);
+    background: -webkit-linear-gradient(to right, #001929, black);
+    background: -o-linear-gradient(to right, #001929, black);
+    background: -moz-linear-gradient(to right, #001929, black);
+    background: linear-gradient(to right, #001929, black);
 }
 
-.lotus {
+.leftIcon {
     float: left;
     margin-right: 1em;
 }
@@ -29,7 +29,7 @@ textarea {
 .brandName {
     font-family: 'Architects Daughter', cursive;
     font-size: xx-large;
-    margin-top: 0.5em;
+    margin-top: 1em;
     margin-left: 5em;
 }
 
